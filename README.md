@@ -19,10 +19,9 @@ bestil includes the following commands and tasks:
 | Task             | Description                                                                                                                                     |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | `start`          | Run `npm start` or `yarn start`. 
-                     Open [http://localhost:3000](http://localhost:3000) to view it in the browser.                                                                                                                             |
-| `build`          | Build bestil using `npm run build` or `yarn run build`                                                                                                 |
+                   | Open [http://localhost:3000](http://localhost:3000) to view it in the browser.                                        
+| `build`          | Build bestil using `npm run build` or `yarn run build`                                                                 
 | `test`   |  Test bestil using `npm test` or `yarn test`                           
-                                   |
 | `deploy` | Deploy to build repository to gh-pages using `npm run deploy` or `yarn run deploy` |
 
 
