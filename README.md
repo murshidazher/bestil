@@ -23,7 +23,7 @@ bestil includes the following commands and tasks:
 | `test`   |  Test bestil using `npm test` or `yarn test`                           
                                    |
 | `deploy` | Deploy to build repository to gh-pages using `npm run deploy` or `yarn run deploy` 
-                            |
+                            
 
 
 ## Creators
