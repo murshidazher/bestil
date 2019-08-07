@@ -3,7 +3,7 @@
 
 
 ## Bestil
-A beautiful book finder web app which is simple, elegant and scaleable.
+A simple, elegant and scaleable book finder web app using react.
 
 ## Tools Used
 * :zap: [React](https://reactjs.org/) - a JavaScript library for building User Interfaces.
