@@ -9,7 +9,7 @@ A beautiful book finder web app which is simple, elegant and scaleable.
 * :zap: [React](https://reactjs.org/) - a JavaScript library for building User Interfaces.
 * :rocket: [Github](https://pages.github.com/) - Deployment Enviroment.
 * :gem: [Sketch](https://www.sketch.com/) - Sketch is a digital design toolkit for prototyping.
-* :page_with_curl: [Google](https://google.com) - Google for json placeholder REST API.
+* :page_with_curl: [Google](https://google.com) - GoogleAPI for json placeholder.
 
 
 ### Scripts
@@ -19,10 +19,12 @@ bestil includes the following commands and tasks:
 | Task             | Description                                                                                                                                     |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | `start`          | Run `npm start` or `yarn start`. 
-                   | Open [http://localhost:3000](http://localhost:3000) to view it in the browser.                                        
-| `build`          | Build bestil using `npm run build` or `yarn run build`                                                                 
+                     Open [http://localhost:3000](http://localhost:3000) to view it in the browser.                                                                                                                             |
+| `build`          | Build bestil using `npm run build` or `yarn run build`                                                                                                 |
 | `test`   |  Test bestil using `npm test` or `yarn test`                           
-| `deploy` | Deploy to build repository to gh-pages using `npm run deploy` or `yarn run deploy` |
+                                   |
+| `deploy` | Deploy to build repository to gh-pages using `npm run deploy` or `yarn run deploy` 
+                            |
 
 
 ## Creators
