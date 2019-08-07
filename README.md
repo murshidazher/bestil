@@ -1,7 +1,7 @@
 
 ![alt text](https://github.com/murshidazher/bestil/blob/master/src/img/logo.png)
 ## Bestil
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A beautiful book finder app.
 
 ## Available Scripts
 
