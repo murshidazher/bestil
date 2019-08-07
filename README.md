@@ -3,11 +3,13 @@
 
 
 ## Bestil
-A beautiful book finder app.
+A beautiful book finder web app which is simple, elegant and scaleable.
 
 ## Tools Used
 * :zap: [React](https://reactjs.org/) - a JavaScript library for building User Interfaces.
 * :rocket: [Github](https://pages.github.com/) - Deployment Enviroment.
+* :gem: [Sketch](https://pages.github.com/) - Sketch is .
+* :page_with_curl: [Google](https://google.com) - Google for json placeholder REST API.
 
 
 ### Scripts
@@ -31,7 +33,7 @@ In the project directory, you can run:
 
 **Murshid Azher**
 
-- Twitter: [@murshidazher](https://github.com/murshidazher)
+- Github: [@murshidazher](https://github.com/murshidazher)
 
 ## Copyright and license
 
