@@ -33,7 +33,7 @@ bestil includes the following commands and tasks:
 
 ## License
 
-Code released under the [MIT license](https://github.com/turretcss/turretcss/blob/master/LICENSE).
+Code released under the [MIT license](https://github.com/murshidazher/bestil/blob/master/LICENSE).
 
 
 
