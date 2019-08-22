@@ -5,7 +5,7 @@
 ## Bestil
 A simple and elegant finder web app using react.
 
-## Tools Used
+## Technology Stack
 * :zap: [React](https://reactjs.org/) - is a JavaScript library for building User Interfaces.
 * :rocket: [Github](https://pages.github.com/) - Deployment Enviroment.
 * :gem: [Sketch](https://www.sketch.com/) - Sketch is a digital design toolkit for prototyping.
