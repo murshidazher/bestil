@@ -71,35 +71,44 @@ class App extends Component{
     componentDidMount() {
       this.fetchBooks();
     }
-
-  render() {
-    const { books } = this.props;
-      return(
-          <div>
-            <div className="container" >
-              <div className="pr">
-                <div className="pt">
-                  <img className="logo" src={logo} alt="My Pic"></img>
-                  <h1 className="inter">Search a book</h1>
-                  <p className="lead">Search a book by name and find books similar to it</p>
-                  <SearchBox searchChange={this.onSearch}/>
-                </div>
-                
-              </div>
-              <div className="tc">
-              <Library books={books}/>
-            </div> 
-            </div>
-
-            <div className="footer_div tc">
-              <footer className="footer">
-                Designed and Developed by <a href="https://github.com/murshidazher">@murshidazher </a><br></br> Design inspired from <a href="https://dribbble.com/shots/6490873-Dating-app-search-by-photo-and-settings-updated-source">@prakharsharma </a>
-              </footer>
-            </div>
-          </div>
-           
-      );
+  
+    /*
+     * Traverse the book array and returns an array consisting of filered books.
+     */
+    filterBooks(name) {
+      this.state.books.filter( book => {
+        return book.volumeInfo.title.toLowerCase().includes(name.toLowerCase());
+      } );
     }
+
+    render() {
+      const { books } = this.props;
+        return(
+            <div>
+              <div className="container" >
+                <div className="pr">
+                  <div className="pt">
+                    <img className="logo" src={logo} alt="My Pic"></img>
+                    <h1 className="inter">Search a book</h1>
+                    <p className="lead">Search a book by name and find books similar to it</p>
+                    <SearchBox searchChange={this.onSearch}/>
+                  </div>
+                  
+                </div>
+                <div className="tc">
+                <Library books={books}/>
+              </div> 
+              </div>
+
+              <div className="footer_div tc">
+                <footer className="footer">
+                  Designed and Developed by <a href="https://github.com/murshidazher">@murshidazher </a><br></br> Design inspired from <a href="https://dribbble.com/shots/6490873-Dating-app-search-by-photo-and-settings-updated-source">@prakharsharma </a>
+                </footer>
+              </div>
+            </div>
+            
+        );
+      }
     
 }
 
