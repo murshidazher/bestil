@@ -1,36 +1,52 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Library from '../components/Library';
 import SearchBox from '../components/SearchBox';
 // import { books } from './books';
 import './App.css';
 import logo from '../img/logo.png';
 
+import { setSearchField, requestBooks } from '../actions';
+
+const mapStateToProps = state => {
+  return {
+    searchfield: state.searchBooks.searchfield,
+    books: state.requestBooks.books,
+    isPending: state.requestBooks.isPending,
+    error: state.requestBooks.error
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
+    onRequestBooks: (searchfield) => requestBooks(dispatch, searchfield)
+  }
+}
+
 class App extends Component{
 
     constructor() {
       super();
-      this.state = {
-        books: [],
-        searchfield: 'fiction'
-      }
+      
       this.timer = null;
-      this.api = 'https://www.googleapis.com/books/v1/volumes?q=';
     }
 
     /*
      * Triggered when a new value is entered in the search bar
      */
-    onSearchChange = (event) => {
+    onSearch = (event) => {
 
       // Cancel the fetch timer to process the current request
       clearTimeout(this.timer);
 
 
-      if(event.target.value !== '') {
-        this.setState({searchfield: event.target.value});
+      if (event.target.value !== '') {
+        this.props.onSearchChange(event);
       }
       else {
-        this.setState({searchfield: 'fiction'});
+        event.target.value = 'fiction';
+        this.props.onSearchChange(event);
       }
 
       // Set a timer for fetch request
@@ -46,29 +62,18 @@ class App extends Component{
      * Loads the books from google books API      
      */
     fetchBooks() {
-      fetch(`${this.api}${this.state.searchfield}`)
-      .then(response => response.json())
-      .then(book => this.setState({books: book.items}));
+      this.props.onRequestBooks(this.props.searchfield);
     }
 
     /*
      * Load some default books
      */
     componentDidMount() {
-      
       this.fetchBooks();
     }
 
-    /*
-     * Traverse the book array and returns an array consisting of filered books.
-     */
-    filterBooks(name) {
-      this.state.books.filter( book => {
-        return book.volumeInfo.title.toLowerCase().includes(name.toLowerCase());
-      } );
-    }
-
-    render() {
+  render() {
+    const { books } = this.props;
       return(
           <div>
             <div className="container" >
@@ -77,12 +82,12 @@ class App extends Component{
                   <img className="logo" src={logo} alt="My Pic"></img>
                   <h1 className="inter">Search a book</h1>
                   <p className="lead">Search a book by name and find books similar to it</p>
-                  <SearchBox searchChange={this.onSearchChange}/>
+                  <SearchBox searchChange={this.onSearch}/>
                 </div>
                 
               </div>
               <div className="tc">
-              <Library books={this.state.books}/>
+              <Library books={books}/>
             </div> 
             </div>
 
@@ -98,4 +103,4 @@ class App extends Component{
     
 }
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);
