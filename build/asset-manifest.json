@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bestil/static/css/main.3a4f621c.chunk.css",
-    "main.js": "/bestil/static/js/main.62c17a5c.chunk.js",
-    "main.js.map": "/bestil/static/js/main.62c17a5c.chunk.js.map",
+    "main.js": "/bestil/static/js/main.f9fd5e3e.chunk.js",
+    "main.js.map": "/bestil/static/js/main.f9fd5e3e.chunk.js.map",
     "runtime~main.js": "/bestil/static/js/runtime~main.e67a03c4.js",
     "runtime~main.js.map": "/bestil/static/js/runtime~main.e67a03c4.js.map",
     "static/js/2.16565663.chunk.js": "/bestil/static/js/2.16565663.chunk.js",
     "static/js/2.16565663.chunk.js.map": "/bestil/static/js/2.16565663.chunk.js.map",
     "index.html": "/bestil/index.html",
-    "precache-manifest.55858f9f019819a6e61437f8a3e6cd16.js": "/bestil/precache-manifest.55858f9f019819a6e61437f8a3e6cd16.js",
+    "precache-manifest.ed42d514b34bbc00856c8e9255539b45.js": "/bestil/precache-manifest.ed42d514b34bbc00856c8e9255539b45.js",
     "service-worker.js": "/bestil/service-worker.js",
     "static/css/main.3a4f621c.chunk.css.map": "/bestil/static/css/main.3a4f621c.chunk.css.map",
     "static/media/App.css": "/bestil/static/media/Inter-SemiBoldItalic.53d5519c.woff",
