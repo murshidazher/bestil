@@ -20,7 +20,7 @@ const Library = ({books}) => {
                             key={book.id} 
                             id={book.id} 
                             cover={
-                                (book.volumeInfo.imageLinks !== undefined) ?book.volumeInfo.imageLinks.smallThumbnail.replace('&edge=curl','')
+                                (book.volumeInfo.imageLinks !== undefined) ? (book.volumeInfo.imageLinks.smallThumbnail.replace('&edge=curl','')).replace(/^http:\/\//i, 'https://')
                                 : 'https://freefrontend.com/assets/img/html-funny-404-pages/SVG-Animation-404-Page.png'
                             } 
                             name={
