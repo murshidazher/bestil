@@ -11,6 +11,7 @@ A simple and elegant finder web app using react.
 * :rocket: [Github](https://pages.github.com/) - Deployment Enviroment.
 * :gem: [Sketch](https://www.sketch.com/) - Sketch is a digital design toolkit for prototyping.
 * :page_with_curl: [Google](https://google.com) - GoogleAPI for json placeholder.
+* :hourglass_flowing_sand: [Enzyme](https://airbnb.io/enzyme/) - Enzyme to write tests for React Components.
 
 
 ### Scripts
