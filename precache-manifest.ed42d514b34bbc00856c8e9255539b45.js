@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7860444731b01db09dbd9f8396c9ef67",
+    "revision": "85043d41ee51aa67856a689de3f10063",
     "url": "/bestil/index.html"
   },
   {
-    "revision": "4875184beb8060e2408d",
+    "revision": "c0f9d55896109712c1f6",
     "url": "/bestil/static/css/main.3a4f621c.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bestil/static/js/2.16565663.chunk.js"
   },
   {
-    "revision": "4875184beb8060e2408d",
-    "url": "/bestil/static/js/main.62c17a5c.chunk.js"
+    "revision": "c0f9d55896109712c1f6",
+    "url": "/bestil/static/js/main.f9fd5e3e.chunk.js"
   },
   {
     "revision": "8cf8a1d75ba87c7b3b4a",
