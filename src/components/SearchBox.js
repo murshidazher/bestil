@@ -7,7 +7,7 @@ const SearchBox = ({searchfield, searchChange}) => {
 
         <div className="input-group input-group--with-icon icon-left">
 
-            <input className="search form-control maxw-8 clr--red" type="search" placeholder="Enter a book name" onChange={searchChange} />
+            <input aria-label="Search Books" className="search form-control maxw-8 clr--red" type="search" placeholder="Enter a book name" onChange={searchChange} />
 
             <svg className="search-icon">
 

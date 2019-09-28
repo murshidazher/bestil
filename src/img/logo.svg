@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="142px" height="142px" viewBox="0 0 142 142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="13.7018658%" y1="8.57457949%" x2="87.3421856%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#EDEEF6" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="108" height="108" rx="28"></rect>
+        <filter x="-26.9%" y="-20.4%" width="153.7%" height="153.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="7" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="11" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.403846154 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="36.9726895%" y1="31.7847847%" x2="75.9908096%" y2="77.6421508%" id="linearGradient-4">
+            <stop stop-color="#FE38A1" offset="0%"></stop>
+            <stop stop-color="#E354E8" offset="25.6888725%"></stop>
+            <stop stop-color="#9948F9" offset="56.1127534%"></stop>
+            <stop stop-color="#4B8CFD" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-5" cx="60" cy="64" r="36"></circle>
+        <filter x="-47.2%" y="-44.4%" width="194.4%" height="194.4%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-51.4%" y="-48.6%" width="202.8%" height="202.8%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="45.9792252%" y1="31.7847847%" x2="58.0218548%" y2="77.6421508%" id="linearGradient-8">
+            <stop stop-color="#FE38A1" offset="0%"></stop>
+            <stop stop-color="#E354E8" offset="25.6888725%"></stop>
+            <stop stop-color="#9948F9" offset="56.1127534%"></stop>
+            <stop stop-color="#4B8CFD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Macbook-Air" transform="translate(-595.000000, -53.000000)">
+            <g id="Group-2" transform="translate(612.000000, 63.000000)">
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <g id="Oval" filter="url(#filter-6)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-5"></use>
+                    <use fill-opacity="0.25" fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                </g>
+                <text id="B" fill="url(#linearGradient-8)" font-family="Inter-Black, Inter" font-size="60" font-weight="700" letter-spacing="-0.52875375">
+                    <tspan x="34" y="76">B</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

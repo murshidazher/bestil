@@ -12,10 +12,15 @@ import { searchBooks, requestBooks } from './reducers';
 
 const logger = createLogger();
 
+let middleware = [thunkMiddleware];
+
+if (process.env.NODE_ENV !== 'production') {
+    middleware = [...middleware, logger];
+}
+
 const rootReducer = combineReducers({ searchBooks, requestBooks });
 
-const store = createStore(rootReducer, applyMiddleware(thunkMiddleware, logger));
-
+const store = createStore(rootReducer, applyMiddleware(...middleware));
 
 ReactDOM.render(
     <Provider store={store}>
