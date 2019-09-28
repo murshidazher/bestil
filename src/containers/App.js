@@ -102,7 +102,7 @@ class App extends Component{
 
               <div className="footer_div tc">
                 <footer className="footer">
-                  Designed and Developed by <a href="https://github.com/murshidazher">@murshidazher </a><br></br> Design inspired from <a href="https://dribbble.com/shots/6490873-Dating-app-search-by-photo-and-settings-updated-source">@prakharsharma </a>
+                  Developed by <a href="https://github.com/murshidazher">@murshidazher </a><br></br> Design inspired from <a href="https://dribbble.com/shots/6490873-Dating-app-search-by-photo-and-settings-updated-source">@prakharsharma </a>
                 </footer>
               </div>
             </div>
