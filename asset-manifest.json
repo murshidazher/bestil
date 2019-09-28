@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/bestil/static/css/main.b1cbe24b.chunk.css",
-    "main.js": "/bestil/static/js/main.67ef9ceb.chunk.js",
-    "main.js.map": "/bestil/static/js/main.67ef9ceb.chunk.js.map",
+    "main.css": "/bestil/static/css/main.3a4f621c.chunk.css",
+    "main.js": "/bestil/static/js/main.62c17a5c.chunk.js",
+    "main.js.map": "/bestil/static/js/main.62c17a5c.chunk.js.map",
     "runtime~main.js": "/bestil/static/js/runtime~main.e67a03c4.js",
     "runtime~main.js.map": "/bestil/static/js/runtime~main.e67a03c4.js.map",
-    "static/js/2.9d1ff8f7.chunk.js": "/bestil/static/js/2.9d1ff8f7.chunk.js",
-    "static/js/2.9d1ff8f7.chunk.js.map": "/bestil/static/js/2.9d1ff8f7.chunk.js.map",
+    "static/js/2.16565663.chunk.js": "/bestil/static/js/2.16565663.chunk.js",
+    "static/js/2.16565663.chunk.js.map": "/bestil/static/js/2.16565663.chunk.js.map",
     "index.html": "/bestil/index.html",
-    "precache-manifest.0ba467779d93509da18f814edfe394ae.js": "/bestil/precache-manifest.0ba467779d93509da18f814edfe394ae.js",
+    "precache-manifest.55858f9f019819a6e61437f8a3e6cd16.js": "/bestil/precache-manifest.55858f9f019819a6e61437f8a3e6cd16.js",
     "service-worker.js": "/bestil/service-worker.js",
-    "static/css/main.b1cbe24b.chunk.css.map": "/bestil/static/css/main.b1cbe24b.chunk.css.map",
+    "static/css/main.3a4f621c.chunk.css.map": "/bestil/static/css/main.3a4f621c.chunk.css.map",
     "static/media/App.css": "/bestil/static/media/Inter-SemiBoldItalic.53d5519c.woff",
     "static/media/logo.png": "/bestil/static/media/logo.8db017ed.png",
     "static/media/SearchBox.css": "/bestil/static/media/search.91cb16e6.svg"
