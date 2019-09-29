@@ -12,8 +12,8 @@ export const setSearchField = (text) => ({
 
 export const requestBooks = (searchfield) => (dispatch) => {
     dispatch({ type: REQUEST_BOOKS_PENDING })
-    fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchfield}`)
+    return fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchfield}`)
       .then(response => response.json())
-        .then(data => dispatch({type: REQUEST_BOOKS_SUCCESS, payload: data}))
+        .then(data =>  dispatch( {type: REQUEST_BOOKS_SUCCESS, payload: data}))
         .catch (error => dispatch({type: REQUEST_BOOKS_FAILED, payload: error}));
 }

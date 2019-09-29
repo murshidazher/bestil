@@ -42,70 +42,21 @@ describe('requestBooks', () => {
 
     it('expected actions should be dispatched on successful request', () => {
 
+        const expectedActions = [
+            { type: REQUEST_BOOKS_PENDING },
+            {
+                type: REQUEST_BOOKS_SUCCESS,
+                payload: {}
+            }
+        ]
+
         const store = mockStore();
-        const expectedActions = [
-            { type: REQUEST_BOOKS_PENDING },
-            { type: REQUEST_BOOKS_SUCCESS }
-        ]
-
-        // Mock the fetch() global to always return the same value for GET
-        // requests to all URLs.
-        fetchMock.get('*', { response: 200 })
-
-            console.log(store.dispatch(actions.requestBooks('abc')))
-            return store.dispatch(actions.requestBooks('John'))
-                .then(() => {
-                    const action = store.getActions()
-                    expect(action).toEqual(expectedActions)
-                })
-
-        fetchMock.restore()
-    })
-    
-    it('expected actions should be dispatched on failed request', () => {
-        const store = mockStore()
-        const expectedActions = [
-            { type: REQUEST_BOOKS_PENDING },
-            { type: REQUEST_BOOKS_FAILED }
-        ]
-        // Mock the fetch() global to always return the same value for GET
-        // requests to all URLs.
-        fetchMock.get('*', { response: 404 })
-
-        return store.dispatch(actions.requestBooks('John'))
-        .then(() => {
-            const action = store.getActions()
-            expect(action).toEqual(expectedActions)
-        })
-
-        fetchMock.restore()
-    })
-    
-
-        
-    
-
-        // const expectedActions = [
-        //     { type: REQUEST_BOOKS_PENDING },
-        //     {
-        //         type: REQUEST_BOOKS_SUCCESS,
-        //         payload: [{
-        //                 id: 1,
-        //                 volumeInfo: {
-        //                     title: 'Book about John Doe',
-        //                     authors: ['Jane Jackson', 'Janet Jackson'],
-        //                     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nobis labore fuga',
-        //                     imageLinks: {
-        //                         smallThumbnail:
-        //                             'https://books.google.com/books/content?id=SQMQQyIaACYC&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;source=gbs_api'
-        //                     }
-        //                 }
-        //             }]
-        //     },
-        //     {
-        //         type: REQUEST_BOOKS_FAILED,
-        //         payload: 'An unexpected error occurred' 
-        //     }
-        // ]
-        
+       
+        return store.dispatch(actions.requestBooks('fiction'))
+            .then(() => {
+                const action = store.getActions();
+                expect(action[0]).toEqual(expectedActions[0])
+                expect(action[1].type).toEqual(expectedActions[1].type)
+            })
+    }) 
 })
