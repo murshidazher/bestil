@@ -10,7 +10,7 @@ export const setSearchField = (text) => ({
     payload: text
 });
 
-export const requestBooks = (dispatch, searchfield) => {
+export const requestBooks = (searchfield) => (dispatch) => {
     dispatch({ type: REQUEST_BOOKS_PENDING })
     fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchfield}`)
       .then(response => response.json())

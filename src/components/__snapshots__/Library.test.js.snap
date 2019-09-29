@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`except to render Library component 1`] = `ShallowWrapper {}`;
+
+exports[`except to render Library component with undefined authors 1`] = `ShallowWrapper {}`;
+
+exports[`except to render Library component with undefined description 1`] = `ShallowWrapper {}`;
+
+exports[`except to render Library component with undefined imageLinks 1`] = `ShallowWrapper {}`;

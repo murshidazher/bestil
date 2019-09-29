@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`except to render Card component 1`] = `ShallowWrapper {}`;
+
+exports[`except to render Card component with soldout 1`] = `ShallowWrapper {}`;

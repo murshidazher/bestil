@@ -1,0 +1,196 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/Inter-Regular.woff2") format("woff2"),
+         url("../fonts/Inter-Regular.woff") format("woff");
+  }
+  @font-face {
+    
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/Inter-Italic.woff2") format("woff2"),
+         url("../fonts/Inter-Italic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("../fonts/Inter-Medium.woff2") format("woff2"),
+         url("../fonts/Inter-Medium.woff") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url("../fonts/Inter-MediumItalic.woff2") format("woff2"),
+         url("../fonts/Inter-MediumItalic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("../fonts/Inter-SemiBold.woff2") format("woff2"),
+         url("../fonts/Inter-SemiBold.woff") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url("../fonts/Inter-SemiBoldItalic.woff2") format("woff2"),
+         url("../fonts/Inter-SemiBoldItalic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/Inter-Bold.woff2") format("woff2"),
+         url("../fonts/Inter-Bold.woff") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/Inter-BoldItalic.woff2") format("woff2"),
+         url("../fonts/Inter-BoldItalic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("../fonts/Inter-ExtraBold.woff2") format("woff2"),
+         url("../fonts/Inter-ExtraBold.woff") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url("../fonts/Inter-ExtraBoldItalic.woff2") format("woff2"),
+         url("../fonts/Inter-ExtraBoldItalic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("../fonts/Inter-Black.woff2") format("woff2"),
+         url("../fonts/Inter-Black.woff") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 900;
+    font-display: swap;
+    src: url("../fonts/Inter-BlackItalic.woff2") format("woff2"),
+         url("../fonts/Inter-BlackItalic.woff") format("woff");
+  }
+  
+
+.tc {
+    text-align: center;
+
+}
+
+.inter {
+  margin: 0;
+    font-family: 'Inter';
+    font-size: 2.625rem;
+    padding-bottom: 1.125rem;
+}
+
+.card {
+  font-family: 'Inter';
+}
+
+.pr {
+  position: relative;
+}
+
+.pt {
+  padding-top: 4.875em;
+  padding-bottom: 6.875em;
+}
+
+.hero {
+  position: absolute;
+  left: 50vw;
+  top: -12vw;
+  z-index: -1;
+}
+
+.lead {
+  font-size: 1.3125rem;
+  max-width: 18em;
+  padding-bottom: 2.125rem;
+  color: #C0C2C5;
+}
+
+.logo {
+  width: 108px;
+  height: 108px;
+  padding-bottom: 6.75em;
+}
+
+.footer {
+  position: absolute;
+
+  line-height: 1.5;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer>a{
+  
+  background: linear-gradient(92deg, #FE38A1 0%, #E354E8 26%, #9948F9 56%, #4B8CFD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto; 
+}
+
+.footer_div {
+  position: relative;
+  margin-top: 80px;
+  height: 140px;
+
+  border-top: 1px solid #c0c2c526;
+  
+  color:rgb(0, 0, 0);
+  font-weight: 500;
+      vertical-align: middle;
+
+}
+
+.tl {
+  text-align: left;
+  /* margin-left: 110px; */
+}
+
+.fw--normal {
+  font-weight: 400;
+}
+
+

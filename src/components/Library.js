@@ -12,8 +12,8 @@ const Library = ({books}) => {
             <div className="library">
                  {books.map((book, i) => {
                      
-                     let randomPrice = Math.floor(Math.random() * 53) + 18;
-                     let discountPrice = Math.floor(Math.random() * randomPrice) + 9;
+                     let randomPrice = (Math.floor(Math.random() * 53) + 18).toFixed(2);
+                     let discountPrice = (Math.floor(Math.random() * randomPrice) + 9).toFixed(2);
                      let status = (Math.floor(Math.random() * 2) === 1) ? 'Available': 'Sold Out';
     
                     return <Card 
