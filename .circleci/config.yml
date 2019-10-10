@@ -12,10 +12,10 @@ jobs:
     steps:
       - checkout
       - run: echo "Double Hello !"
-  workflows:
-    version: 2.1
-    build1_2:
-      jobs:
-        - build-1
-        - build-2
+workflows:
+  version: 2.1
+  build1_2:
+    jobs:
+      - build-1
+      - build-2
   
