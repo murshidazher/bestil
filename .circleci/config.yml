@@ -16,9 +16,7 @@ jobs:
       - run: echo "testing..."
       - run: npm install
       - run: npm test
-    requires:
-      - pre-test
-  pre-test:
+  pre_test:
     docker:
       - image: circleci/node:8.9
     steps:
@@ -29,6 +27,8 @@ workflows:
   build_test_and_lint:
     jobs:
       - build
+      - pre_test
       - test
-          
+          requires:
+            - pre_test
   
