@@ -21,7 +21,7 @@ jobs:
       - image: circleci/node:8.9
     steps:
       - checkout
-      - run: echo "runs before test
+      - run: echo "runs before test"
 workflows:
   version: 2.1
   build_test_and_lint:
