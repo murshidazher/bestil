@@ -28,7 +28,5 @@ workflows:
     jobs:
       - build
       - pre-test
-      - test:
-        requires:
-          - pre-test
+      - test
   
