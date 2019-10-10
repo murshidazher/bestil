@@ -27,7 +27,6 @@ workflows:
   build_test_and_lint:
     jobs:
       - build
-      - pre-test
       - test
         requires:
           - pre-test
