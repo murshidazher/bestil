@@ -8,7 +8,6 @@ jobs:
       - run: echo "npm installing..."
       - run: npm install
       - run: CI=true npm run build
-
   test:
     docker:
       - image: circleci/node:8.9
@@ -16,14 +15,12 @@ jobs:
       - checkout
       - run: echo "testing..."
       - run: npm test
-  
   pre-test:
     docker:
       - image: circleci/node:8.9
     steps:
       - checkout
-      - run: echo "runs before test"
-
+      - run: echo "runs before test
 workflows:
   version: 2.1
   build_test_and_lint:
