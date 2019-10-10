@@ -16,19 +16,19 @@ jobs:
       - run: echo "testing..."
       - run: npm install
       - run: npm test
-  pre_test:
+  hithere:
     docker:
       - image: circleci/node:8.9
     steps:
       - checkout
-      - run: echo "runs before test"
+      - run: echo "Hellloooo!"
 workflows:
   version: 2.1
   build_test_and_lint:
     jobs:
       - build
-      - pre_test
-      - test
+      - hithere
+      - test:
           requires:
-            - pre_test
+            - hithere
   
