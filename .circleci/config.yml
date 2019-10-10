@@ -1,0 +1,21 @@
+version: 2.1
+jobs:
+  build-1:
+    docker:
+      - image: circleci/ruby:2.5.1
+    steps:
+      - checkout
+      - run: echo "First Hello !"
+  build-2:
+    docker:
+      - image: circleci/ruby:2.5.1
+    steps:
+      - checkout
+      - run: echo "Double Hello !"
+  workflows:
+    version: 2.1
+    build1_2:
+      jobs:
+        - build-1
+        - build-2
+  
