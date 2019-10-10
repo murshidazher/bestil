@@ -29,4 +29,6 @@ workflows:
       - build
       - pre-test
       - test
+        requires:
+          - pre-test
   
