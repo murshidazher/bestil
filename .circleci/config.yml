@@ -16,6 +16,8 @@ jobs:
       - run: echo "testing..."
       - run: npm install
       - run: npm test
+    requires:
+      - pre-test
   pre-test:
     docker:
       - image: circleci/node:8.9
@@ -28,6 +30,5 @@ workflows:
     jobs:
       - build
       - test
-          requires:
-            - pre-test
+          
   
