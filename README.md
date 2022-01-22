@@ -7,7 +7,7 @@ A simple and elegant finder web app using react.
 
 ## Technology Stack
 * :zap: [React](https://reactjs.org/) - is a JavaScript library for building User Interfaces.
-* :truck: [Redux] (https://redux.js.org/) - Flux based state management library.
+* :truck: [Redux](https://redux.js.org/) - Flux based state management library.
 * :rocket: [Github](https://pages.github.com/) - Deployment Enviroment.
 * :gem: [Sketch](https://www.sketch.com/) - Sketch is a digital design toolkit for prototyping.
 * :page_with_curl: [Google](https://google.com) - GoogleAPI for json placeholder.
